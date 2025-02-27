@@ -1,28 +1,29 @@
+
 .middle {
-    position: absolute;
-    top: 60px;
-    bottom: 100px;
+    flex: 1;
     width: 100%;
     background: linear-gradient(135deg, #e0f7fa, #80deea, #4dd0e1);
     display: flex;
-    padding: 20px;
-    overflow: hidden;
+    padding: 70px;
+    gap: 20px;
+    min-height: calc(100vh - 70px - 350px); /* Adjust to make room for footer */
 }
 
-/* Animation 1 - Left Section with Project Slider */
-.animation1 {
+/* Content column styles */
+.animation1, .links, .animation2 {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
+    min-width: 300px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
 }
 
-.slider-title {
+/* Slider styles */
+.slider-title, .skills-title {
     text-align: center;
     margin-bottom: 20px;
     color: #2c3e50;
@@ -33,7 +34,7 @@
     position: relative;
 }
 
-.slider-title::after {
+.slider-title::after, .skills-title::after {
     content: '';
     position: absolute;
     bottom: -8px;
@@ -136,41 +137,7 @@
     background-color: white;
 }
 
-/* Links - Middle Section with Skills */
-.links {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
-}
-
-.skills-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    position: relative;
-}
-
-.skills-title::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 3px;
-    background-color: #3498db;
-    border-radius: 3px;
-}
-
+/* Skills container */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -235,19 +202,6 @@
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Animation 2 - Right Section for 3D Animation */
-.animation2 {
-    flex: 1;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
 .animation-placeholder {
     display: flex;
     flex-direction: column;
@@ -265,12 +219,6 @@
     animation: float 3s ease-in-out infinite;
 }
 
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
-}
-
 .animation-placeholder h3 {
     font-size: 20px;
     color: #2c3e50;
@@ -284,30 +232,14 @@
     margin-bottom: 20px;
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background-color: black;
-}
-
-/* Responsive adjustments */
+/* Responsive adjustments for middle section */
 @media (max-width: 992px) {
     .middle {
         flex-direction: column;
-        overflow-y: auto;
-        padding: 15px;
     }
     
     .animation1, .links, .animation2 {
         width: 100%;
-        margin-right: 0;
         margin-bottom: 20px;
-        min-height: 400px;
-    }
-    
-    .animation2 {
-        margin-bottom: 0;
     }
 }
