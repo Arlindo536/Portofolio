@@ -35,12 +35,7 @@ This portfolio website was created to demonstrate my  development skills and pro
 ## Setup and Installation
 
 If you want to run this project locally:
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/arlindo536/Portofolio.git
-   ```
-2. Open the `index.html` file in your web browser
+(https://github.com/arlindo536/Portofolio.git)
 
 ## Future Improvements
 
