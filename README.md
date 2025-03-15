@@ -32,11 +32,6 @@ This portfolio website was created to demonstrate my  development skills and pro
 - Professional resume/CV information
 - Contact form
 
-## Setup and Installation
-
-If you want to run this project locally:
-(https://github.com/arlindo536/Portofolio.git)
-
 ## Future Improvements
 
 - Add a blog section
@@ -47,10 +42,8 @@ If you want to run this project locally:
 ## Contact
 
 If you have any questions or would like to connect, please reach out via:
-- Email: [your-email@example.com]
-- LinkedIn: [your-linkedin-profile]
+- Email: [dishiarlindo@gmail.com]
+- LinkedIn: [https://www.linkedin.com/in/arlindo-dishi-9171762a1/]
 - GitHub: [https://github.com/arlindo536](https://github.com/arlindo536)
 
-## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
